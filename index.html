@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <h2 class="desc">Vamos converter a temperatura?</h2>
+
+      <section class="containerSelect">
+        <label for="">De:</label>
+        <select name="from" id="fromTemp" class="select">
+          <option value="C">Grau Celsius</option>
+          <option value="F">Grau Fahrenheit</option>
+          <option value="K">Kelvin</option>
+        </select>
+        <label for="">Para:</label>
+        <select name="to" id="toTemp" class="select">
+          <option value="F">Grau Fahrenheit</option>
+          <option value="K">Kelvin</option>
+          <option value="C">Grau Celsius</option>
+        </select>
+      </section>
+
+      <section class="containerInput">
+        <h3 class="title">Temperatura</h3>
+        <input
+          class="input"
+          id="inputValue"
+          type="number"
+          placeholder="Digite a temperatura"
+        />
+      </section>
+      <section class="btns">
+        <button class="btn" id="convert-btn">Converter</button>
+        <button class="btn" id="clear-btn">Limpar</button>
+      </section>
+      <section class="containerOutput">
+        <label for="">Resultado da conversão</label>
+        <output class="output" id="result" for="inputValue">0</output>
+      </section>
+    </main>
+  </body>
+</html>
