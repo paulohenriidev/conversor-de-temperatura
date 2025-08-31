@@ -5,7 +5,7 @@ A aplicação permite converter valores entre Celsius (°C), Fahrenheit (°F) e 
 
 
 ## 🖼️ Preview do Projeto
-
+- Deploy: https://paulohenriidev.github.io/conversor-de-temperatura/
 <img width="629" height="741" alt="Image" src="https://github.com/user-attachments/assets/fba4db7d-f65d-4327-a620-4d8a5b2af887"/>
 
 ---
