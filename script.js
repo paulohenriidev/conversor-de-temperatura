@@ -1,14 +1,14 @@
 const btn = document.getElementById("convert-btn");
-const btnC = document.getElementById("clear-btn");
+const btnClean = document.getElementById("clean-btn");
 const selectFrom = document.getElementById("fromTemp");
 const selectTo = document.getElementById("toTemp");
+const input = Number(document.getElementById("inputValue").value);
+const output = document.getElementById("result");
 
 function convert() {
-  const input = Number(document.getElementById("inputValue").value);
-  const output = document.getElementById("result");
   const temps = selectFrom.value + "-" + selectTo.value;
 
-  if (input <= 0) {
+  if (input === "" || isNaN(input)) {
     return alert("Coloque o valor para conversão!");
   }
 
@@ -36,12 +36,10 @@ function convert() {
       break;
   }
 }
-function clear() {
-  const clearResult = document.getElementById("result");
-  const clearInput = document.getElementById("inputValue");
-  clearResult.value = "0";
-  clearInput.value = "";
+function cleanUp() {
+  output.value = "0";
+  input.value = "";
 }
 
 btn.addEventListener("click", convert);
-btnC.addEventListener("click", clear);
+btnClean.addEventListener("click", cleanUp);
