@@ -2,15 +2,14 @@ const btn = document.getElementById("convert-btn");
 const btnClean = document.getElementById("clean-btn");
 const selectFrom = document.getElementById("fromTemp");
 const selectTo = document.getElementById("toTemp");
-const input = Number(document.getElementById("inputValue").value);
+
 const output = document.getElementById("result");
-
 function convert() {
-  const temps = selectFrom.value + "-" + selectTo.value;
-
+  const input = (document.getElementById("inputValue").value);
   if (input === "" || isNaN(input)) {
     return alert("Coloque o valor para conversão!");
   }
+  const temps = selectFrom.value + "-" + selectTo.value;
 
   switch (temps) {
     case "C-F":
@@ -37,8 +36,8 @@ function convert() {
   }
 }
 function cleanUp() {
-  output.value = "0";
-  input.value = "";
+  document.getElementById("inputValue").value = "";
+  output.textContent = "0";
 }
 
 btn.addEventListener("click", convert);
