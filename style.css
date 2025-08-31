@@ -93,6 +93,8 @@ label {
   margin-top: 6%;
 }
 .output {
+  display: flex;
+  justify-content: center;
   color: #ffff;
   width: 40%;
   border-radius: 6px;
