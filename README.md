@@ -32,4 +32,4 @@ A aplicação permite converter valores entre Celsius (°C), Fahrenheit (°F) e 
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/conversor-moedas.git
+git clone https://github.com/paulohenriidev/conversor-de-temperatura.git
